@@ -2,6 +2,37 @@
 	padding: 0;
 	margin: 0;
 }
+body {
+	background-color: blanchedalmond;
+}
+section {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: fit-content;
+}
+h1 {
+	justify-self: center;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+div {
+	text-align: center;
+	margin-top: 2em;
+}
+a,
+button {
+	padding: 5px;
+	text-decoration: none;
+	color: inherit;
+	border: solid 3px black;
+	border-radius: 100px;
+	background-color: coral;
+	&:hover {
+		box-shadow: -2px -2px 5px black inset;
+	}
+}
 
 #loginpage {
 	width: 20em;
@@ -16,12 +47,16 @@
 	margin-right: auto;
 	padding: 1em;
 }
+form {
+	display: flex;
+	flex-direction: column;
+}
 
 from input,
 form label {
 	display: block;
 }
-for,
+form,
 input {
 	margin-bottom: 1em;
 	padding: 0.5em;
@@ -44,8 +79,24 @@ input {
 }
 #links {
 	&.showmessage {
-		display: block;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+
 		background-color: green;
 		padding: 1em;
 	}
+}
+
+#list {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+ul {
+	list-style-type: none;
+}
+li {
+	margin: 1em;
+	text-decoration: none;
 }
