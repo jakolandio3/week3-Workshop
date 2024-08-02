@@ -21,11 +21,18 @@ $(document).ready(function () {
 				if (results.valid == 'true') {
 					$('#loginform').removeClass('fail');
 					$('#loginform').addClass('success');
+					$('#errormsg').removeClass('showmessage');
+					$('#errormsg').addClass('hidemessage');
+					$('#links').removeClass('hidemessage');
+					$('#links').addClass('showmessage');
 				} else {
 					$('#loginform').removeClass('success');
 					$('#loginform').addClass('fail');
+					$('#errormsg').removeClass('hidemessage');
+					$('#errormsg').addClass('showmessage');
+					$('#links').removeClass('showmessage');
+					$('#links').addClass('hidemessage');
 				}
-				$('#postResultsDiv').html(`${results.valid}`);
 			},
 			error: function (e) {
 				alert('error!');

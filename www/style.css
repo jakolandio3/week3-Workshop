@@ -34,3 +34,18 @@ input {
 	background-color: red;
 	padding: 1em;
 }
+.hidemessage {
+	display: none;
+}
+.showmessage {
+	display: block;
+	background-color: red;
+	padding: 1em;
+}
+#links {
+	&.showmessage {
+		display: block;
+		background-color: green;
+		padding: 1em;
+	}
+}
